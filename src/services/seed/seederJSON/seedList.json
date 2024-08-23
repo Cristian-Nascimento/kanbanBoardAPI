@@ -1,0 +1,15 @@
+[
+  {
+    "title": "Novo",
+    "hasCreate": true
+  },
+  {
+    "title": "Em andamento"
+  },
+  {
+    "title": "Validação (QA)"
+  },
+  {
+    "title": "Finalizado"
+  }
+]
