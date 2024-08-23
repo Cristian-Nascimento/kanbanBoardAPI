@@ -12,7 +12,7 @@ const {
 } = schema.tree
 
 /**
- * @api {post} /project Create project
+ * @api {post} /projects Create project
  * @apiName CreateProject
  * @apiGroup project
  * @apiParam {String} userId
@@ -45,7 +45,7 @@ router.post('/',
 )
 
 /**
- * @api {get} /project Retrieve project
+ * @api {get} /projects Retrieve project
  * @apiName RetrieveProject
  * @apiGroup project
  * @apiParam {query} userId
@@ -84,13 +84,13 @@ router.get('/',
 )
 
 /**
- * @api {put} /project/:id Update project
+ * @api {put} /projects/:id Update project
  * @apiName UpdateProject
  * @apiGroup project
  * @apiParam {path} id Id of target item to update.
  * @apiParam {String} name project name.
  * @apiParamExample {URL} Request example:
- *  https://{localhost}/project/
+ *  https://{localhost}/projects/66b7c386573f97a7603a121f
  * @apiParamExample {JSON} Payload example:
  * {
  *     "userId": "66b798cfc738bc7d90e5de3a",
@@ -118,12 +118,12 @@ router.put('/:id',
   update)
 
 /**
- * @api {delete} /project/:id Delete project
+ * @api {delete} /projects/:id Delete project
  * @apiName DeleteProject
  * @apiGroup project
  * @apiParam {path} id Id of target item to delete.
  * @apiParamExample {URL} Request example:
- *  https://{localhost}/project/
+ *  https://{localhost}/projects/66b7c386573f97a7603a121f
  * @apiSuccess (Success 204) 204 No Content.
  * @apiError 404 CR não encontrada.
  * @apiError 401 admin access only.
